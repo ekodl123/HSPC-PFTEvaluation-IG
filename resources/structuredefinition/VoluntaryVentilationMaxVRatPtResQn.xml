@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="VoluntaryVentilationMaxVRatPtResQn"/>
+    <url value="http://hl7.org/fhir/IHCPFT/StructureDefinition/VoluntaryVentilationMaxVRatPtResQn"/>
+    <name value="IHC Maximum Voluntary Ventilation"/>
+    <status value="draft"/>
+    <date value="2019-03-27"/>
+    <publisher value="Intermountain Healthcare"/>
+    <description value="Maximum Voluntary Ventilation is the maximum volume of air that can be both inhaled and exhaled in one minute. LOINC code 201590-0"/>
+    <fhirVersion value="3.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcVoluntaryVentilationMaxVRatPtResQn">
+            <path value="Observation"/>
+            <definition value="VoluntaryVentilationMaxVRatPtResQn is the maximum volume of air that can be both inhaled and exhaled in one minute. LOINC code 201590-0"/>
+        </element>
+        <element id="Observation:hspcVoluntaryVentilationMaxVRatPtResQn.code">
+            <path value="Observation.code"/>
+            <short value="key"/>
+        </element>
+		<element id="Observation:hspcVoluntaryVentilationMaxVRatPtResQn.code:coding">
+			<path value="Observation.code.coding"/>
+		</element>
+		<element id="Observation:hspcVoluntaryVentilationMaxVRatPtResQn.code.coding:system">
+			<path value="Observation.code.coding.system"/>
+			<fixedUri value="http://loinc.org"/>
+		</element>
+		<element id="Observation:hspcVoluntaryVentilationMaxVRatPtResQn.code.coding:code">
+			<path value="Observation.code.coding.code"/>
+			<fixedCode value="20159-0"/>
+		</element>
+		<element id="Observation:hspcVoluntaryVentilationMaxVRatPtResQn.code.coding.display">
+			<path value="Observation.code.coding.display"/>
+			<fixedString value="Maximum voluntary ventilation"/>
+		</element>
+        <element id="Observation:hspcVoluntaryVentilationMaxVRatPtResQn.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:hspcVoluntaryVentilationMaxVRatPtResQn.valueQuantity.system">
+            <path value="Observation.valueQuantity.system"/>
+            <type>
+                <code value="uri"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+            </type>
+            <fixedUri value="http://unitsofmeasure.org"/>
+        </element>
+        <element id="Observation:hspcVoluntaryVentilationMaxVRatPtResQn.valueQuantity.code">
+            <path value="Observation.valueQuantity.code"/>
+            <type>
+                <code value="code"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+            </type>
+            <fixedCode value="L/min"/>
+        </element>
+        <element id="Observation:hspcVoluntaryVentilationMaxVRatPtResQn.comment">
+            <path value="Observation.comment"/>
+            <short value="comment"/>
+            <comment value="Key code for this model: Comment_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="string"/>
+            </type>
+        </element>
+        <element id="Observation:hspcVoluntaryVentilationMaxVRatPtResQn.externalIdentifier">
+            <path value="Observation.identifier"/>
+            <short value="externalIdentifier"/>
+            <comment value="Key code for this model: ExternalIdentifier_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcVoluntaryVentilationMaxVRatPtResQn.aggregate">
+            <path value="Observation.text"/>
+            <short value="aggregate"/>
+            <comment value="Key code for this model: Aggregate_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Narrative"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="IHCPFT" />
+  <url value="http://hl7.org/fhir/IHCPFT/ImplementationGuide/IHCPFT"/>
+  <version value="1.0"/>
+  <name value="IHC Pulmonary Function Test IG" />
+  <status value="draft" />
+  <date value="2018-09-26"/>
+  <publisher value="Intermountain Healthcare"/>
+  <description value="The Implementation Guide resource profile for the IHC Pulmonary Function Test IG"/>
+  <copyright value="HSPC"/>
+    <package>
+        <name value="Profiles in this Implementation Guide" />	
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="StructureDefinition/ForcedVitalCapacityVolPtResQn"/>
+				<display value ="Forced Vital Capacity"/>
+			</sourceReference>	
+		</resource>		
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="StructureDefinition/VolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn"/>
+				<display value ="FEV1"/>
+			</sourceReference>	
+		</resource>		
+		<resource>		
+			<example value="false"/>	
+			<sourceReference>	
+				<reference value ="StructureDefinition/VoluntaryVentilationMaxVRatPtResQn"/>
+				<display value ="Maximum Voluntary Ventilation"/>
+			</sourceReference>	
+		</resource>	
+    </package>
+</ImplementationGuide>

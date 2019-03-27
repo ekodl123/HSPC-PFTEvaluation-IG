@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+    <!--© 2018 IHC Health Services, Inc. All Rights Reserved. This document is machine generated.-->
+    <id value="VolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn"/>
+    <url value="http://hl7.org/fhir/IHCPFT/StructureDefinition/VolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn"/>
+    <name value="IHC Volume Expired During One Second Of Forced Expiration"/>
+    <status value="draft"/>
+    <date value="2019-03-27"/>
+    <publisher value="Intermountain Healthcare"/>
+    <description value="FEV1 is a clinical element model for recording the volume of expired air in one second of forced expiration. LOINC
+    code 20150-9"/>
+    <fhirVersion value="3.0.1"/>
+    <kind value="complex-type"/>
+    <abstract value="false"/>
+    <type value="Observation"/>
+    <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <derivation value="constraint"/>
+    <differential>
+        <element id="Observation:hspcVolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn">
+            <path value="Observation"/>
+            <definition value="VolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn is a clinical element model for recording the volume of expired air in one second of forced expiration.
+            LOINC code 20150-9"/>
+        </element>
+        <element id="Observation:hspcVolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn.key">
+            <path value="Observation.code"/>
+            <short value="key"/>
+        </element>
+        <element id="Observation:hspcVolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn.code.coding">
+            <path value="Observation.code.coding"/>
+        </element>
+        <element id="Observation:hspcVolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn.code.coding.system">
+            <path value="Observation.code.coding.system"/>
+            <fixedUri value="http://loinc.org"/>
+        </element>
+        <element id="Observation:hspcVolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn.code.coding.code">
+            <path value="Observation.code.coding.code"/>
+            <fixedCode value="20150-9"/>
+        </element>
+        <element id="Observation:hspcVolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn.code.coding.display">
+            <path value="Observation.code.coding.display"/>
+            <fixedString value="FEV1"/>
+        </element>
+        <element id="Observation:hspcVolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn.valueQuantity">
+            <path value="Observation.valueQuantity"/>
+            <short value="valueQuantity"/>
+            <type>
+                <code value="Quantity"/>
+            </type>
+        </element>
+        <element id="Observation:hspcVolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn.valueQuantity.system">
+            <path value="Observation.valueQuantity.system"/>
+            <type>
+                <code value="uri"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/uri"/>
+            </type>
+            <fixedUri value="http://unitsofmeasure.org"/>
+        </element>
+        <element id="Observation:hspcVolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn.valueQuantity.code">
+            <path value="Observation.valueQuantity.code"/>
+            <type>
+                <code value="code"/>
+                <profile value="http://hl7.org/fhir/StructureDefinition/code"/>
+            </type>
+            <fixedCode value="L"/>
+        </element>
+        <element id="Observation:hspcVolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn.externalIdentifier">
+            <path value="Observation.identifier"/>
+            <short value="externalIdentifier"/>
+            <comment value="Key code for this model: ExternalIdentifier_KEY_CODE"/>
+            <min value="0"/>
+            <max value="*"/>
+            <type>
+                <code value="Identifier"/>
+            </type>
+        </element>
+        <element id="Observation:hspcVolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn.aggregate">
+            <path value="Observation.text"/>
+            <short value="aggregate"/>
+            <comment value="Key code for this model: Aggregate_KEY_CODE"/>
+            <min value="0"/>
+            <max value="1"/>
+            <type>
+                <code value="Narrative"/>
+            </type>
+        </element>
+    </differential>
+</StructureDefinition>
