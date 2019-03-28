@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="hl7.fhir.IHCPFT-null"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>IHC Pulmonary Function Test IG</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/IHCPFT/ImplementationGuide/IHCPFT</pre><div><p>The Implementation Guide resource profile for the IHC Pulmonary Function Test IG</p>
+</div></div>
+  </text>
+  <url value="http://hl7.org/fhir/IHCPFT/ImplementationGuide/IHCPFT"/>
+  <version value="1.0"/>
+  <name value="IHC Pulmonary Function Test IG"/>
+  <status value="draft"/>
+  <date value="2018-09-26T00:00:00-06:00"/>
+  <publisher value="Intermountain Healthcare"/>
+  <description value="The Implementation Guide resource profile for the IHC Pulmonary Function Test IG"/>
+  <copyright value="HSPC"/>
+  <fhirVersion value="3.0.1"/>
+  <package id="p1">
+    <name value="Profiles in this Implementation Guide"/>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-ForcedVitalCapacityVolPtResQn.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/ForcedVitalCapacityVolPtResQn"/>
+        <display value="Forced Vital Capacity"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="VolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn-WoundAssertOption2.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/VolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn"/>
+        <display value="FEV1"/>
+      </sourceReference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/StructureDefinition/implementationguide-page">
+        <valueUri value="StructureDefinition-VoluntaryVentilationMaxVRatPtResQn.html"/>
+      </extension>
+      <example value="false"/>
+      <sourceReference>
+        <reference value="StructureDefinition/VoluntaryVentilationMaxVRatPtResQn"/>
+        <display value="Maximum Voluntary Ventilation"/>
+      </sourceReference>
+    </resource>
+  </package>
+</ImplementationGuide>

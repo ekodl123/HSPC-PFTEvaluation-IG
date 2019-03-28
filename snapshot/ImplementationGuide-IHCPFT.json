@@ -1,0 +1,64 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.IHCPFT-null",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>IHC Pulmonary Function Test IG</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.org/fhir/IHCPFT/ImplementationGuide/IHCPFT</pre><div><p>The Implementation Guide resource profile for the IHC Pulmonary Function Test IG</p>\n</div></div>"
+  },
+  "url": "http://hl7.org/fhir/IHCPFT/ImplementationGuide/IHCPFT",
+  "version": "1.0",
+  "name": "IHC Pulmonary Function Test IG",
+  "status": "draft",
+  "date": "2018-09-26T00:00:00-06:00",
+  "publisher": "Intermountain Healthcare",
+  "description": "The Implementation Guide resource profile for the IHC Pulmonary Function Test IG",
+  "copyright": "HSPC",
+  "fhirVersion": "3.0.1",
+  "package": [
+    {
+      "id": "p1",
+      "name": "Profiles in this Implementation Guide",
+      "resource": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-ForcedVitalCapacityVolPtResQn.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/ForcedVitalCapacityVolPtResQn",
+            "display": "Forced Vital Capacity"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "VolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn-WoundAssertOption2.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/VolumeExpiredDuringOneSecondOfForcedExpirationVolPtRespQn",
+            "display": "FEV1"
+          }
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+              "valueUri": "StructureDefinition-VoluntaryVentilationMaxVRatPtResQn.html"
+            }
+          ],
+          "example": false,
+          "sourceReference": {
+            "reference": "StructureDefinition/VoluntaryVentilationMaxVRatPtResQn",
+            "display": "Maximum Voluntary Ventilation"
+          }
+        }
+      ]
+    }
+  ]
+}
